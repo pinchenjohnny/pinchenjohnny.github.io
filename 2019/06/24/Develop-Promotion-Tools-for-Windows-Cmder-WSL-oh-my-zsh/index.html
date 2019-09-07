@@ -14,20 +14,20 @@
     
     
     
-    <title>Develop Promotion Tools for Windows: Cmder + WSL + oh-my-zsh | Pin Chen&#39;s Blog</title>
+    <title>Categories: OS | Pin Chen&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="Windows,DevTools">
-    <meta name="description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Here’s a better site Dev on Windows with WSL">
+    <meta name="description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Check this web site Dev on Windows with WSL">
 <meta name="keywords" content="Windows,DevTools">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Develop Promotion Tools for Windows: Cmder + WSL + oh-my-zsh">
 <meta property="og:url" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/index.html">
 <meta property="og:site_name" content="Pin Chen&#39;s Blog">
-<meta property="og:description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Here’s a better site Dev on Windows with WSL">
+<meta property="og:description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Check this web site Dev on Windows with WSL">
 <meta property="og:locale" content="en-US">
 <meta property="og:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/cmder-wsl.png">
 <meta property="og:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/toggle-developer-mode.jfif">
@@ -36,10 +36,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/add-ubuntu-task-in-cmder.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/ubuntu-bash-as-startup.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/zsh-autosuggestions.jpg">
-<meta property="og:updated_time" content="2019-09-07T07:30:18.457Z">
+<meta property="og:updated_time" content="2019-09-07T08:16:36.763Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Develop Promotion Tools for Windows: Cmder + WSL + oh-my-zsh">
-<meta name="twitter:description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Here’s a better site Dev on Windows with WSL">
+<meta name="twitter:description" content="Cmder with zsh in Windows with WSL               UPDATE 2019/8 Check this web site Dev on Windows with WSL">
 <meta name="twitter:image" content="http://yoursite.com/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/cmder-wsl.png">
     
         <link rel="alternate" type="application/atom+xml" title="Pin Chen&#39;s Blog" href="/atom.xml">
@@ -135,7 +135,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -212,7 +212,7 @@
             </figure>
 <blockquote>
 <p><strong>UPDATE 2019/8</strong></p>
-<p>Here’s a better site <a href="https://dowww.spencerwoo.com/" target="_blank" rel="noopener">Dev on Windows with WSL</a> introducing the similar things, but more comprehensive and elegant.</p>
+<p>Check this web site <a href="https://dowww.spencerwoo.com/" target="_blank" rel="noopener">Dev on Windows with WSL</a> to learn WSL, terminal config, and VS code in a more comprehensive and elegant way :)</p>
 </blockquote>
 <p>In this article, I’ll introduce:</p>
 <ul>
@@ -232,30 +232,6 @@
 <ul>
 <li>Win 10 OS</li>
 <li>Anaconda package: download Linux version from the <a href="https://www.anaconda.com/distribution/" target="_blank" rel="noopener">official site</a>.</li>
-</ul>
-<p>Contents:</p>
-<ul>
-<li><a href="#1-cmder">1. Cmder</a><ul>
-<li><a href="#11-install">1.1 Install</a></li>
-<li><a href="#12-hotkeys">1.2 Hotkeys</a></li>
-</ul>
-</li>
-<li><a href="#2-wsl-windows-subsystem-for-linux">2. WSL (Windows Subsystem for Linux)</a><ul>
-<li><a href="#21-install">2.1 Install</a></li>
-<li><a href="#22-usage">2.2 Usage</a></li>
-</ul>
-</li>
-<li><a href="#3-oh-my-zsh">3. oh-my-zsh</a><ul>
-<li><a href="#31-install">3.1 Install</a></li>
-<li><a href="#32-usage">3.2 Usage</a></li>
-</ul>
-</li>
-<li><a href="#4-optional-install-anaconda-and-nodejs">4. [Optional] Install Anaconda and Node.js</a><ul>
-<li><a href="#41-anaconda">4.1 Anaconda</a></li>
-<li><a href="#42-nodejs-and-nvm">4.2 Node.js and nvm</a></li>
-<li><a href="#references">References</a></li>
-</ul>
-</li>
 </ul>
 <h1 id="1-Cmder"><a href="#1-Cmder" class="headerlink" title="1. Cmder"></a>1. Cmder</h1><p><em>Cmder</em> concrete introduction and manual in <a href="https://github.com/cmderdev/cmder" target="_blank" rel="noopener">github</a>.</p>
 <h2 id="1-1-Install"><a href="#1-1-Install" class="headerlink" title="1.1 Install"></a>1.1 Install</h2><p>(1) Download the <a href="https://github.com/cmderdev/cmder/releases/" target="_blank" rel="noopener">latest release</a>.</p>
@@ -404,7 +380,7 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 <pre><code class="lang-sh"># run the Anaconda script and complete installation process
 bash Anaconda3-2019.03-Linux-x86_64.sh
 </code></pre>
-<p>Add the the following to <em>~/.zshrc</em> if commands like <code>conda</code> not work:</p>
+<p>Add the following to <em>~/.zshrc</em> if commands like <code>conda</code> not work:</p>
 <pre><code class="lang-bash"># anaconda
 export PATH=$PATH:/home/pinchen/anaconda3/bin
 </code></pre>
@@ -439,7 +415,7 @@ export NVM_DIR=&quot;$HOME/.nvm&quot;
     <div class="content">
         
 <span class="post-time">
-    最終更新：<time datetime="2019-09-07T07:30:18.457Z" itemprop="dateUpdated">2019-09-07 15:30:18</time>
+    Last updated: <time datetime="2019-09-07T08:16:36.763Z" itemprop="dateUpdated">2019-09-07 16:16:36</time>
 </span><br>
 
 
@@ -516,6 +492,19 @@ export NVM_DIR=&quot;$HOME/.nvm&quot;
     </div>
 
     
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Quickly Initialize Linux Terminal With Github dotfiles</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
 
 
     
@@ -568,7 +557,7 @@ export NVM_DIR=&quot;$HOME/.nvm&quot;
                     </span>
                     
                         <span>
-                            このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a>
+                            This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
                         </span>
             </p>
     </div>

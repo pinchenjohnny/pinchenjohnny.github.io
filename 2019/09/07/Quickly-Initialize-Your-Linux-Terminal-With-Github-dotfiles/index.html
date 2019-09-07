@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Categories:  | Pin Chen&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="DevTools,Linux">
+    <meta name="description" content="vimrc               TODO Use sh script to initialize automatically  In this article I will introduce:  Back">
+<meta name="keywords" content="DevTools,Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quickly Initialize Linux Terminal With Github dotfiles">
+<meta property="og:url" content="http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/index.html">
+<meta property="og:site_name" content="Pin Chen&#39;s Blog">
+<meta property="og:description" content="vimrc               TODO Use sh script to initialize automatically  In this article I will introduce:  Back">
+<meta property="og:locale" content="en-US">
+<meta property="og:image" content="http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/vimrc.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/dotfiles-github-io.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/pin-dotfiles.png">
+<meta property="og:updated_time" content="2019-09-07T14:38:45.284Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Quickly Initialize Linux Terminal With Github dotfiles">
+<meta name="twitter:description" content="vimrc               TODO Use sh script to initialize automatically  In this article I will introduce:  Back">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/vimrc.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="Pin Chen&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/bar-icon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <link href="/css/prism/prism-tomorrow-night.css" rel="stylesheet">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-list-ul"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back_blue.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Pin Chen</h5>
+          <a href="mailto:pinchen2015@126.com" title="pinchen2015@126.com" class="mail">pinchen2015@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/pinchenjohnny"  >
+                <i class="icon icon-lg icon-github"></i>
+                代码
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Quickly Initialize Linux Terminal With Github dotfiles</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Quickly Initialize Linux Terminal With Github dotfiles</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-09-07T08:08:00.000Z" itemprop="datePublished" class="page-time">
+  2019-09-07
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/OS/">OS</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-dotfiles"><span class="post-toc-text">1. dotfiles</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-Initialize-terminal-with-dotfiles"><span class="post-toc-text">2. Initialize terminal with dotfiles</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-Install-vim-and-zsh"><span class="post-toc-text">2.1 Install vim and zsh</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-Plant-dotfiles"><span class="post-toc-text">2.2 Plant dotfiles</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-My-zsh-and-zsh-customization"><span class="post-toc-text">3. My zsh and zsh customization</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-zsh"><span class="post-toc-text">3.1 zsh</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-vim"><span class="post-toc-text">3.2 vim</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Quickly Initialize Linux Terminal With Github dotfiles</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-09-07 16:08:00" datetime="2019-09-07T08:08:00.000Z"  itemprop="datePublished">2019-09-07</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/OS/">OS</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/vimrc.png" alt="vimrc" title>
+                </div>
+                <div class="image-caption">vimrc</div>
+            </figure>
+<blockquote>
+<p><strong>TODO</strong></p>
+<p>Use sh script to initialize automatically</p>
+</blockquote>
+<p>In this article I will introduce:</p>
+<ul>
+<li>Backup and share your Linux config, known as <code>dotfiles</code> on GitHub.</li>
+<li>Initialize terminal with <code>zsh</code> and <code>vim</code> with <em>dotfiles</em>.</li>
+</ul>
+<h2 id="1-dotfiles"><a href="#1-dotfiles" class="headerlink" title="1. dotfiles"></a>1. dotfiles</h2><p>Basically speaking, Linux config files are start with <code>.</code>, like <code>.zshrc</code> for <em>oh-my-zsh</em> and <code>.vim</code> for <em>vim</em>.</p>
+<p>People share their customized config on GitHub <a href="http://dotfiles.github.io/" target="_blank" rel="noopener">http://dotfiles.github.io/</a>. You can easily get and learn how others setup their OS and softwares.</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/dotfiles-github-io.png" alt="http://dotfiles.github.io/" title>
+                </div>
+                <div class="image-caption">http://dotfiles.github.io/</div>
+            </figure>
+<p>You can also backup and sync through GitHub, as easily as create a repo and upload your dotfiles into it, Here is mine <a href="https://github.com/pinchenjohnny/pin-dotfiles" target="_blank" rel="noopener">pin-dotfiles</a>.</p>
+<blockquote>
+<p><strong>Warning</strong></p>
+<p>You shouldn’t upload your files with secrets like passwords or other sensitive information to a public repo!</p>
+</blockquote>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/pin-dotfiles.png" alt="pin dotfiles" title>
+                </div>
+                <div class="image-caption">pin dotfiles</div>
+            </figure>
+<h2 id="2-Initialize-terminal-with-dotfiles"><a href="#2-Initialize-terminal-with-dotfiles" class="headerlink" title="2. Initialize terminal with dotfiles"></a>2. Initialize terminal with dotfiles</h2><p>It is intelligent to use sh scripts to do duplicated jobs like initialization every time you hand on a new system. But, today let’s manually download dotfiles and make things work.</p>
+<p>Before it, think about what softwares you mostly use to dev. It’s safe to say shell and vim. Here, I’ll use my dotfiles to demonstarte. And I’ll introduce what I customized in <a href="#3-my-zsh-and-zsh-customization">3. My zsh and zsh customization</a>.</p>
+<h3 id="2-1-Install-vim-and-zsh"><a href="#2-1-Install-vim-and-zsh" class="headerlink" title="2.1 Install vim and zsh"></a>2.1 Install vim and zsh</h3><p>Vim is usually installed with the system. Run <code>vi</code> to check. If not, I suggest install <a href="https://github.com/neovim/neovim" target="_blank" rel="noopener"><code>neovim</code></a> instead, which is a reconstructed <em>vim</em> and compatibale with vim configurations.</p>
+<p><code>cat /etc/shells</code> to check whether <em>zsh</em> is installed. If not, find how in <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH" target="_blank" rel="noopener">zsh wiki</a>.</p>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">oh-my-zsh</a> is a framework to help manage <em>zsh</em> configuration.</p>
+<pre><code class="lang-sh"># install zsh on Ubuntu
+apt install zsh
+# change current shell to zsh
+chsh -s $(which zsh)
+
+# install oh-my-zsh
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+<h3 id="2-2-Plant-dotfiles"><a href="#2-2-Plant-dotfiles" class="headerlink" title="2.2 Plant dotfiles"></a>2.2 Plant dotfiles</h3><pre><code class="lang-sh"># prepare dotfiles
+git clone https://github.com/pinchenjohnny/pin-dotfiles.git
+cd pin-dotfiles
+cp -t ~/ .vim .zshrc
+</code></pre>
+<p><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener">zsh-autosuggestions</a> is a commands prompt based on input history.</p>
+<p><a href="https://github.com/wting/autojump" target="_blank" rel="noopener">autojump</a>: jump to visted directory arbitrarily using command <code>j &lt;visited dir&gt;</code>.</p>
+<pre><code class="lang-sh"># make zsh work
+
+cd ~
+
+# install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# install autojump
+git clone git://github.com/wting/autojump.git
+cd autojump
+python ./install.py
+
+cd ~
+# REMEMBER to change /home/pinchen to your home dir in .zshrc
+
+source .zshrc
+</code></pre>
+<p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener">vim-plug</a> is a vim plugins manager.</p>
+<pre><code class="lang-sh"># make vim work
+# for neovim, this is slightly different
+# check neovim github for details
+
+cd ~
+
+# install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+cd ~/.vim
+vi vimrc
+</code></pre>
+<p>To install vim plugins via vim-plug, in vim command line mode of <code>vimrc</code>, input <code>PlugInstall</code>.</p>
+<h2 id="3-My-zsh-and-zsh-customization"><a href="#3-My-zsh-and-zsh-customization" class="headerlink" title="3. My zsh and zsh customization"></a>3. My zsh and zsh customization</h2><p>In this part, I’ll simply introduce features of my customization and some frequently used operations. Check <code>.zshrc</code> and <code>.vim/vimrc</code> for more information.</p>
+<h3 id="3-1-zsh"><a href="#3-1-zsh" class="headerlink" title="3.1 zsh"></a>3.1 zsh</h3><p>Double hit <code>Esc</code> to add <code>sudo</code> to current command.</p>
+<p>Alias like:</p>
+<pre><code class="lang-sh">alias la=&#39;ls -a&#39;
+alias ll=&#39;ls -al&#39;
+alias gc=&#39;git clone&#39;
+alias ga=&#39;git add -A&#39;
+alias gcm=&#39;git commit -m&#39;
+alias gp=&#39;git push&#39;
+</code></pre>
+<p>Use <code>j &lt;visited dir&gt;</code> to jump to visited dir from anywhere.</p>
+<h3 id="3-2-vim"><a href="#3-2-vim" class="headerlink" title="3.2 vim"></a>3.2 vim</h3><p>I adjust my vim config from <a href="https://github.com/theniceboy/.vim" target="_blank" rel="noopener">theniceboy/.vim</a>. Go and check his if you are a colemak<br>keyboard layout user.</p>
+<p>My <em>vim</em> leader key is <code>Space</code>.</p>
+<p>Some key maps:</p>
+<pre><code>&quot; Save &amp; quit
+map Q :q&lt;CR&gt;
+map W :w&lt;CR&gt;
+map &lt;LEADER&gt;q :q!&lt;CR&gt;
+map &lt;LEADER&gt;w :w !sudo tee %&lt;CR&gt;
+
+&quot; Search
+map &lt;LEADER&gt;&lt;CR&gt; :nohlsearch&lt;CR&gt;
+noremap = nzz
+noremap - Nzz
+
+&quot; Cursor Movement
+noremap J 5j
+noremap K 5k
+noremap H 5b
+noremap L 5w
+noremap &lt;C-h&gt; 0
+noremap &lt;C-l&gt; $
+</code></pre>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-09-07T14:38:45.284Z" itemprop="dateUpdated">2019-09-07 22:38:45</time>
+</span><br>
+
+
+        
+        文章发布地址：<a href="/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" target="_blank" rel="external">http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Pin Chen">
+            Pin Chen
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DevTools/">DevTools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&title=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&title=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/06/24/Develop-Promotion-Tools-for-Windows-Cmder-WSL-oh-my-zsh/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Develop Promotion Tools for Windows: Cmder + WSL + oh-my-zsh</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+            <p>
+                
+                    <span>
+                        <a href="/atom.xml" target="_blank" class="rss" title="rss">
+                            <i class="icon icon-lg icon-rss"></i>
+                        </a>
+                    </span>
+                    
+                        <span>
+                            This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                        </span>
+            </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                Pin Chen &copy;
+                    
+                        2018 -
+                            
+                                2019
+            </span>
+            <span>
+                
+                        Power by
+                        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a>
+                        <p>Hosted by <a href="https://coding.net/pages" style="font-weight: bold">Coding Pages</a></p>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" id="gobottom" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-comments"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&title=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&title=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Quickly Initialize Linux Terminal With Github dotfiles》 — Pin Chen's Blog&url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/09/07/Quickly-Initialize-Your-Linux-Terminal-With-Github-dotfiles/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADNElEQVR42u3aS27jQAwFwNz/0hlgVjNIrLzXtIGILq0CW2ipmAXNz8dHfH3+vb5+cv35v99+vfP6KfkJycmHFzY2NvZN2J+XV85+9NLXn19jroObPPfhU7CxsbHXsfN0Uhz9pNOSANVJDhsbG/st2cn9bVCS5JSnQGxsbGzs/PGTkiA/p21sYWNjY78z+6wYmIcsby3NixxsbGzsrex20Pub/37hfBsbGxv7V7I/yytfzZmMb/PTDhXY2NjYi9hJg/5sYPCKcCSFSt5mwsbGxt7EbhtM7RpNjjxrY529AzY2NvYOdrtY077i2bOetazz8A2xsbGxF7Hb5ZuzAW2b/PKion0HbGxs7N3sttnULsqctXvytHR2GjY2NvYm9rMGty27LSHaM38ICjY2NvYKdjK+fe7gtiW1a0PJKBobGxt7B3v+Wm3jaTLcPRst/FB+YGNjY9+cPWnTtMs9yXrNPIEVSQ4bGxt7Bfv6FZ9VnNSj1nIlqG5pYWNjYy9iJ2XDvA3UFjN5+kzKqqi1hI2NjX1bdhuhJOHNk1NbYLQFDzY2NvYmdps8Jm2mSaqbFDY/9NKwsbGxl7LzH/ftEuR80bP9Z9TxwMbGxr4h+4UHlY3+PEW1IYtc2NjY2Ddnn/30T5JKO6CdPz1JotjY2Ng72G16eEU42nDnK5gPg4KNjY29mn02gh3VPYN7zhZ3sLGxsTex8+PaAiMfSLRp6ayNdRhFbGxs7F/Pblvw+T35+k5erkwC+t/n2NjY2IvY+WPaBtD1sk6ehOYFz8OnY2NjY69g56PWwypnzMtDWQQdGxsbexE7+fmeN4PywLUvnZxQj36xsbGxV7AnaePszknBc1YUffMO2NjY2OvYbZt+UqLkCemFa0DY2NjY69j51Sans5FwnqjyYfDD2gsbGxv75uy2iZ//nS/Q5AtDbcpskyI2Njb2fdlt0mqT2VlD6ixARWLDxsbGXsdum0r54k6xRlMOEtqm0jcJDBsbG/vN2G0ZcPbt2aCiHipgY2NjvzE7bxI9a/XnrHV1OOXGxsbGvi27BbTtpDZwkxOiNIyNjY29iN0OeucLl/PBwyQfYWNjYy9i/wFyG5a603RTUQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="/js/prism.js"></script>
+<script src="/js/prism-vim.js"></script>
+</body>
+</html>
